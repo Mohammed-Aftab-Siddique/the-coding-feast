@@ -1,0 +1,21 @@
+apiVersion: v1
+
+kind: Service
+
+metadata:
+
+  name: the-coding-feast-service
+
+spec:
+
+  selector:
+
+    app: the-coding-feast
+
+  ports:
+
+  - port: 80
+
+    targetPort: 5000
+
+  type: NodePort

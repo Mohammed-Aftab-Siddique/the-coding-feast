@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: the-coding-feast
+
+spec:
+
+  replicas: 1
+
+  selector:
+
+    matchLabels:
+
+      app: the-coding-feast
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: the-coding-feast
+
+    spec:
+
+      containers:
+
+      - name: the-coding-feast
+
+        image: lordsam07/the-coding-feast:latest
+
+        ports:
+
+        - containerPort: 5000
