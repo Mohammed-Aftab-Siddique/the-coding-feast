@@ -32,6 +32,8 @@ spec:
 
         image: lordsam07/the-coding-feast:latest
 
+        imagePullPolicy: Always
+
         ports:
 
         - containerPort: 5000
